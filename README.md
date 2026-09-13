@@ -30,7 +30,7 @@
 - [SEO Implementation](#-seo-implementation)
 - [Responsive Breakpoints](#-responsive-breakpoints)
 - [Performance Optimizations](#-performance-optimizations)
-- [How to Run](#-how-to-run)
+- [Getting Started — Full Setup Guide](#-getting-started--full-setup-guide)
 - [Screenshots](#-screenshots)
 - [Future Enhancements](#-future-enhancements)
 - [Author](#-author)
@@ -691,31 +691,211 @@ In production, these events would be picked up by GTM container tags and forward
 
 ---
 
-## 🚀 How to Run
+## 🚀 Getting Started — Full Setup Guide
 
-### Option 1: Direct Open (Simplest)
+### Prerequisites
+
+Before running this project, make sure you have **one** of the following installed on your machine:
+
+| Tool | Required? | Download Link |
+|------|-----------|---------------|
+| **Web Browser** | ✅ Yes | Chrome, Firefox, Edge, or Safari (any modern browser) |
+| **VS Code** | 📌 Recommended | [https://code.visualstudio.com/](https://code.visualstudio.com/) |
+| **Git** | 📌 Recommended | [https://git-scm.com/downloads](https://git-scm.com/downloads) |
+| **Node.js** | Optional | [https://nodejs.org/](https://nodejs.org/) (for `npx serve`) |
+| **Python** | Optional | [https://www.python.org/downloads/](https://www.python.org/downloads/) (for `python -m http.server`) |
+
+> **Note:** This project has **zero npm dependencies**. You do NOT need to run `npm install`. There is no `package.json` or build step.
+
+---
+
+### Step 1: Download the Project
+
+#### Option A — Clone with Git (Recommended)
+
+Open your terminal (Command Prompt, PowerShell, or Git Bash) and run:
+
 ```bash
-# Just double-click index.html in your file explorer
-# Note: fetch() for JSON files requires a server (see Option 2)
+git clone https://github.com/balaj-mir/interior-design-website.git
 ```
 
-### Option 2: Local Server (Recommended)
+This will create a folder called `interior-design-website` with all project files.
+
+#### Option B — Download as ZIP
+
+1. Go to [https://github.com/balaj-mir/interior-design-website](https://github.com/balaj-mir/interior-design-website)
+2. Click the green **"<> Code"** button (top-right of the file list)
+3. Click **"Download ZIP"**
+4. Extract the downloaded `.zip` file to any folder on your computer
+
+---
+
+### Step 2: Open the Project in Your IDE
+
+#### Using VS Code (Recommended)
+
+1. Open **VS Code**
+2. Go to **File → Open Folder...**
+3. Navigate to the `interior-design-website` folder you cloned/extracted
+4. Click **"Select Folder"**
+5. You should now see all project files in the VS Code sidebar:
+
+```
+📂 interior-design-website
+ ├── 📄 index.html
+ ├── 📄 services.html
+ ├── 📄 shop.html
+ ├── 📄 cart.html
+ ├── 📄 portfolio.html
+ ├── 📄 blog.html
+ ├── 📄 blog-post.html
+ ├── 📄 contact.html
+ ├── 📄 styles.css
+ ├── 📄 script.js
+ ├── 📄 products.json
+ ├── 📄 posts.json
+ └── 📁 images/ (24 image files)
+```
+
+#### Using Any Other IDE
+
+- **Sublime Text**: File → Open Folder → select the project folder
+- **WebStorm**: File → Open → select the project folder
+- **Atom**: File → Add Project Folder → select the project folder
+- **Notepad++**: Open individual files as needed
+
+---
+
+### Step 3: Run the Project in Your Browser
+
+> ⚠️ **Important:** This project uses `fetch()` to load JSON data files (`products.json`, `posts.json`). Due to browser security restrictions (CORS), **you must serve the files through a local web server** — simply double-clicking `index.html` will not load products or blog posts.
+
+#### Method 1: VS Code Live Server Extension (Easiest — Recommended)
+
+1. Open VS Code with the project folder
+2. Go to the **Extensions** panel (click the square icon in the left sidebar, or press `Ctrl+Shift+X`)
+3. Search for **"Live Server"** by Ritwick Dey
+4. Click **"Install"**
+5. Once installed, open `index.html` in the editor
+6. Right-click anywhere in the HTML file
+7. Click **"Open with Live Server"**
+8. ✅ Your default browser will open automatically at `http://127.0.0.1:5500/index.html`
+9. The page will **auto-reload** whenever you save any file — perfect for development!
+
+> **Tip:** You can also click the **"Go Live"** button in the bottom-right status bar of VS Code.
+
+#### Method 2: Using Node.js (`npx serve`)
+
+If you have Node.js installed:
+
 ```bash
-# Using Python
+# Navigate to the project folder
+cd interior-design-website
+
+# Start a local server (no installation needed — npx downloads it automatically)
+npx -y serve .
+```
+
+Output will show:
+```
+   ┌──────────────────────────────────────────┐
+   │                                          │
+   │   Serving!                               │
+   │                                          │
+   │   - Local:    http://localhost:3000       │
+   │   - Network:  http://192.168.x.x:3000    │
+   │                                          │
+   └──────────────────────────────────────────┘
+```
+
+Open `http://localhost:3000` in your browser.
+
+> Press `Ctrl+C` in the terminal to stop the server.
+
+#### Method 3: Using Python
+
+If you have Python installed:
+
+```bash
+# Navigate to the project folder
+cd interior-design-website
+
+# Python 3
 python -m http.server 8000
 
-# Using Node.js
-npx serve .
-
-# Using VS Code
-# Install "Live Server" extension → Right-click index.html → "Open with Live Server"
+# Python 2 (older systems)
+python -m SimpleHTTPServer 8000
 ```
 
-Then visit `http://localhost:8000` (or the port shown in terminal).
+Open `http://localhost:8000` in your browser.
 
-### Option 3: GitHub Pages
-Push to GitHub → Go to Settings → Pages → Select `main` branch → Save.
-Your site will be live at `https://your-username.github.io/interior-design-website/`.
+> Press `Ctrl+C` in the terminal to stop the server.
+
+#### Method 4: Using PHP
+
+If you have PHP installed:
+
+```bash
+cd interior-design-website
+php -S localhost:8000
+```
+
+Open `http://localhost:8000` in your browser.
+
+---
+
+### Step 4: Explore the Website
+
+Once the server is running, you can navigate between all pages:
+
+| URL Path | Page |
+|----------|------|
+| `/` or `/index.html` | 🏠 Home |
+| `/services.html` | 📋 Services & Pricing |
+| `/shop.html` | 🛍️ Shop (browse & filter products) |
+| `/cart.html` | 🛒 Cart (view added items) |
+| `/portfolio.html` | 🖼️ Portfolio Gallery |
+| `/blog.html` | 📝 Blog (search & filter articles) |
+| `/blog-post.html?post=color-psychology-interior-design` | 📄 Sample Blog Post |
+| `/contact.html` | 📞 Contact Form |
+
+**Things to try:**
+- 🛒 Add products to the cart from the Shop page — the cart badge updates in the navbar
+- 🔍 Use the search box and category filters on the Blog page
+- 🖼️ Click any image on the Portfolio page — use arrow keys (← →) or Esc to navigate/close the lightbox
+- 📱 Resize your browser window to see the responsive design in action
+- 📋 Click FAQ questions on the Services page to see the accordion animation
+- 📞 Submit the Contact form to see client-side validation and the success modal
+
+---
+
+### Step 5: Deploy to GitHub Pages (Optional — Make It Live)
+
+If you want to host the site publicly for free:
+
+1. Push the code to your GitHub repository (already done if you cloned this repo)
+2. Go to your repository on GitHub: [https://github.com/balaj-mir/interior-design-website](https://github.com/balaj-mir/interior-design-website)
+3. Click **Settings** (top menu bar)
+4. In the left sidebar, click **Pages**
+5. Under **"Build and deployment"**:
+   - **Source**: Select **"Deploy from a branch"**
+   - **Branch**: Select **`main`** and **`/ (root)`**
+6. Click **Save**
+7. Wait 1–2 minutes for deployment
+8. ✅ Your site will be live at: `https://balaj-mir.github.io/interior-design-website/`
+
+---
+
+### Troubleshooting
+
+| Problem | Solution |
+|---------|----------|
+| Products/blog posts not loading | You're opening `index.html` directly (file:// protocol). Use a local server (see Step 3) |
+| Images not showing | Make sure the `images/` folder is in the same directory as `index.html` |
+| Cart not working | Check that your browser allows localStorage (not in private/incognito with restrictions) |
+| Page looks unstyled | Verify `styles.css` is in the same directory as the HTML files |
+| Live Server not showing option | Make sure you right-click inside an `.html` file, not a CSS/JS file |
+| Port already in use | Try a different port: `python -m http.server 8080` or `npx serve . -l 8080` |
 
 ---
 
