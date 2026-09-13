@@ -1,0 +1,19 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE / Editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Node (if added later)
+node_modules/
+npm-debug.log*
+
+# Misc
+*.log
+*.tmp

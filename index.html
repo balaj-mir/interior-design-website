@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrightNest Interiors — Award-Winning Interior Design</title>
+  <meta name="description" content="BrightNest Interiors transforms houses into homes with award-winning residential and commercial interior design services. Explore our portfolio, shop curated decor, and get inspired.">
+  <meta name="keywords" content="interior design, home decor, residential design, commercial spaces, furniture, BrightNest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <!-- ======================== HERO ======================== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <img src="images/hero-banner.png" alt="Beautiful modern interior designed by BrightNest Interiors" loading="eager">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <span class="section-label" style="background:rgba(255,255,255,0.15);color:#fff;">Award-Winning Design Studio</span>
+        <h1>Transforming Spaces Into Stories</h1>
+        <p>We craft interiors that reflect your personality, elevate your lifestyle, and stand the test of time. From concept to completion, every detail is intentional.</p>
+        <div class="hero-buttons">
+          <a href="services.html" class="btn btn-primary">Explore Our Services</a>
+          <a href="portfolio.html" class="btn btn-outline">View Portfolio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== SERVICES OVERVIEW ======================== -->
+    <section class="section" id="services-overview">
+      <div class="container text-center">
+        <span class="section-label animate-on-scroll">What We Do</span>
+        <h2 class="section-title animate-on-scroll">Design Services Tailored to You</h2>
+        <p class="section-subtitle mx-auto animate-on-scroll" style="margin-bottom:var(--sp-2xl);">Whether you're reimagining a single room or building from the ground up, our team brings expertise, creativity, and care to every project.</p>
+
+        <div class="services-grid">
+          <div class="service-card animate-on-scroll animate-delay-1">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            </div>
+            <h3>Residential Design</h3>
+            <p>Full-service home design from floor plans to finishing touches. We create living spaces that feel personal, functional, and beautiful.</p>
+          </div>
+
+          <div class="service-card animate-on-scroll animate-delay-2">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            </div>
+            <h3>Commercial Spaces</h3>
+            <p>Offices, restaurants, hotels, and retail environments designed to reflect your brand and enhance productivity.</p>
+          </div>
+
+          <div class="service-card animate-on-scroll animate-delay-3">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+            </div>
+            <h3>Design Consultation</h3>
+            <p>Not ready for a full redesign? Book a two-hour consultation for expert guidance on layout, color, and furniture selection.</p>
+          </div>
+
+          <div class="service-card animate-on-scroll animate-delay-4">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+            </div>
+            <h3>Project Management</h3>
+            <p>We coordinate contractors, vendors, and timelines so you don't have to. Stress-free renovations, delivered on schedule.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== FEATURED PRODUCTS ======================== -->
+    <section class="section" style="background:var(--clr-bg-alt);" id="featured-products">
+      <div class="container">
+        <div class="text-center" style="margin-bottom:var(--sp-2xl);">
+          <span class="section-label animate-on-scroll">Curated Collection</span>
+          <h2 class="section-title animate-on-scroll">Shop Our Favorites</h2>
+          <p class="section-subtitle mx-auto animate-on-scroll">Handpicked decor and furniture pieces from trusted artisans — designed to complement any interior.</p>
+        </div>
+        <div class="products-grid" id="featuredProducts">
+          <!-- Populated by script.js -->
+        </div>
+        <div class="text-center" style="margin-top:var(--sp-2xl);">
+          <a href="shop.html" class="btn btn-outline">Browse All Products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== STATS BAR ======================== -->
+    <section class="section" style="background:var(--clr-primary-dark);color:#fff;padding-block:var(--sp-2xl);">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-xl);text-align:center;" class="stats-grid">
+          <div class="animate-on-scroll">
+            <div style="font-family:var(--ff-heading);font-size:var(--fs-4xl);font-weight:700;color:var(--clr-accent);">250+</div>
+            <div style="font-size:var(--fs-sm);opacity:0.8;">Projects Completed</div>
+          </div>
+          <div class="animate-on-scroll animate-delay-1">
+            <div style="font-family:var(--ff-heading);font-size:var(--fs-4xl);font-weight:700;color:var(--clr-accent);">8</div>
+            <div style="font-size:var(--fs-sm);opacity:0.8;">Years of Excellence</div>
+          </div>
+          <div class="animate-on-scroll animate-delay-2">
+            <div style="font-family:var(--ff-heading);font-size:var(--fs-4xl);font-weight:700;color:var(--clr-accent);">98%</div>
+            <div style="font-size:var(--fs-sm);opacity:0.8;">Client Satisfaction</div>
+          </div>
+          <div class="animate-on-scroll animate-delay-3">
+            <div style="font-family:var(--ff-heading);font-size:var(--fs-4xl);font-weight:700;color:var(--clr-accent);">12</div>
+            <div style="font-size:var(--fs-sm);opacity:0.8;">Design Awards</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== TESTIMONIALS ======================== -->
+    <section class="section testimonials" id="testimonials">
+      <div class="container text-center">
+        <span class="section-label animate-on-scroll">Client Love</span>
+        <h2 class="section-title animate-on-scroll">What Our Clients Say</h2>
+
+        <div class="testimonials-slider animate-on-scroll">
+          <div class="testimonials-track">
+            <div class="testimonial-slide">
+              <p class="testimonial-quote">BrightNest completely transformed our brownstone. Every room feels intentional, warm, and uniquely ours. We couldn't be happier with the result.</p>
+              <p class="testimonial-author">Sarah & David Mitchell</p>
+              <p class="testimonial-role">Brooklyn Heights, NY</p>
+            </div>
+            <div class="testimonial-slide">
+              <p class="testimonial-quote">Working with the BrightNest team on our restaurant was a dream. They understood our brand instantly and delivered a space that our guests constantly compliment.</p>
+              <p class="testimonial-author">Marco Rossi</p>
+              <p class="testimonial-role">Owner, Terranova Kitchen</p>
+            </div>
+            <div class="testimonial-slide">
+              <p class="testimonial-quote">From the initial mood board to the final walkthrough, the process was seamless. Our home office now inspires productivity instead of dread.</p>
+              <p class="testimonial-author">Priya Sharma</p>
+              <p class="testimonial-role">Manhattan, NY</p>
+            </div>
+          </div>
+
+          <div class="testimonials-controls">
+            <button class="testimonial-btn prev" aria-label="Previous testimonial">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <div class="testimonials-dots">
+              <span class="active"></span>
+              <span></span>
+              <span></span>
+            </div>
+            <button class="testimonial-btn next" aria-label="Next testimonial">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== BLOG TEASER ======================== -->
+    <section class="section" id="blog-teaser">
+      <div class="container">
+        <div class="text-center" style="margin-bottom:var(--sp-2xl);">
+          <span class="section-label animate-on-scroll">From the Blog</span>
+          <h2 class="section-title animate-on-scroll">Design Inspiration & Tips</h2>
+          <p class="section-subtitle mx-auto animate-on-scroll">Insights from our design team to help you create spaces you love.</p>
+        </div>
+        <div class="blog-grid" id="blogTeaser">
+          <!-- Populated by script.js -->
+        </div>
+        <div class="text-center" style="margin-top:var(--sp-2xl);">
+          <a href="blog.html" class="btn btn-outline">Read All Articles</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== CTA ======================== -->
+    <section class="section" style="background:linear-gradient(135deg,var(--clr-primary-dark) 0%,var(--clr-primary) 100%);color:#fff;text-align:center;">
+      <div class="container">
+        <h2 style="color:#fff;margin-bottom:var(--sp-md);" class="animate-on-scroll">Ready to Transform Your Space?</h2>
+        <p style="opacity:0.85;max-width:550px;margin:0 auto var(--sp-xl);font-size:var(--fs-md);" class="animate-on-scroll">
+          Book a free 30-minute discovery call to discuss your vision. No commitment, just great ideas.
+        </p>
+        <a href="contact.html" class="btn btn-accent animate-on-scroll">Get in Touch</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

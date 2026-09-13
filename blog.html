@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Blog — BrightNest Interiors</title>
+  <meta name="description" content="Read design tips, trend forecasts, room guides, and sustainability insights from the BrightNest Interiors blog.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Design Blog</h1>
+        <p>Insights, inspiration, and practical tips from our design team.</p>
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Blog</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="section">
+      <div class="container">
+        <div class="filter-bar" style="flex-wrap:wrap;gap:var(--sp-md);">
+          <div class="search-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" class="search-box" id="blogSearch" placeholder="Search articles..." aria-label="Search blog articles">
+          </div>
+          <div id="blogFilters" style="display:flex;flex-wrap:wrap;gap:var(--sp-sm);">
+            <!-- Populated by script.js -->
+          </div>
+        </div>
+
+        <div class="blog-grid" id="blogGrid">
+          <!-- Populated by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter CTA -->
+    <section class="section" style="background:var(--clr-bg-alt);text-align:center;">
+      <div class="container">
+        <span class="section-label animate-on-scroll">Stay Inspired</span>
+        <h2 class="section-title animate-on-scroll">Never Miss an Article</h2>
+        <p class="section-subtitle mx-auto animate-on-scroll" style="margin-bottom:var(--sp-xl);">Join 5,000+ design enthusiasts who receive our monthly newsletter with exclusive tips, project showcases, and special offers.</p>
+        <form class="newsletter-form mx-auto animate-on-scroll" style="max-width:450px;background:var(--clr-surface);padding:var(--sp-sm);border-radius:100px;border:1px solid var(--clr-border);" id="blogNewsletter">
+          <input type="email" placeholder="Enter your email" aria-label="Newsletter email" required style="border:none;background:transparent;color:var(--clr-text);padding-left:var(--sp-md);">
+          <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="script.js"></script>
+</body>
+</html>

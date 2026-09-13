@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Oslo Lounge Armchair",
+    "slug": "oslo-lounge-armchair",
+    "price": 849.00,
+    "category": "Furniture",
+    "image": "images/product-armchair.png",
+    "description": "Scandinavian-inspired armchair crafted from solid oak with premium linen upholstery. Perfect for reading nooks and cozy corners.",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "Aura Ceramic Table Lamp",
+    "slug": "aura-ceramic-table-lamp",
+    "price": 189.00,
+    "category": "Lighting",
+    "image": "images/product-lamp.png",
+    "description": "Hand-thrown ceramic lamp with a textured matte glaze and natural linen shade. Casts a warm, ambient glow.",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "name": "Terra Artisan Vase",
+    "slug": "terra-artisan-vase",
+    "price": 125.00,
+    "category": "Decor",
+    "image": "images/product-vase.png",
+    "description": "Handcrafted terracotta vase with an organic, irregular silhouette. Each piece is unique due to the artisan process.",
+    "featured": true
+  },
+  {
+    "id": 4,
+    "name": "Halo Round Wall Mirror",
+    "slug": "halo-round-wall-mirror",
+    "price": 349.00,
+    "category": "Decor",
+    "image": "images/product-mirror.png",
+    "description": "Statement wall mirror with a slim brushed-gold frame. Opens up any room and adds a touch of modern elegance.",
+    "featured": true
+  },
+  {
+    "id": 5,
+    "name": "Luxe Velvet Cushion",
+    "slug": "luxe-velvet-cushion",
+    "price": 69.00,
+    "category": "Textiles",
+    "image": "images/product-cushion.png",
+    "description": "Deep teal velvet cushion with gold piping detail. Layer multiples for a plush, designer look.",
+    "featured": false
+  },
+  {
+    "id": 6,
+    "name": "Horizon Floating Shelf",
+    "slug": "horizon-floating-shelf",
+    "price": 129.00,
+    "category": "Furniture",
+    "image": "images/product-shelf.png",
+    "description": "Dark walnut floating shelf with concealed iron brackets. Minimalist storage that doubles as a display ledge.",
+    "featured": false
+  },
+  {
+    "id": 7,
+    "name": "Sahara Woven Area Rug",
+    "slug": "sahara-woven-area-rug",
+    "price": 459.00,
+    "category": "Textiles",
+    "image": "images/product-rug.png",
+    "description": "Hand-woven jute and cotton rug with geometric diamond pattern. Adds warmth and texture to any living space.",
+    "featured": false
+  },
+  {
+    "id": 8,
+    "name": "Noir Soy Candle Trio",
+    "slug": "noir-soy-candle-trio",
+    "price": 89.00,
+    "category": "Decor",
+    "image": "images/product-candle.png",
+    "description": "Set of three hand-poured soy candles in matte black vessels with wooden lids. Scents: Amber, Cedar, and Vanilla.",
+    "featured": true
+  }
+]

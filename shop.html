@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Curated Decor — BrightNest Interiors</title>
+  <meta name="description" content="Shop handpicked furniture, lighting, textiles, and decor from BrightNest Interiors' curated collection. Artisan-quality pieces for every interior style.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Shop Curated Decor</h1>
+        <p>Handpicked pieces from trusted artisans, designed to complement any interior.</p>
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Shop</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shop Grid -->
+    <section class="section">
+      <div class="container">
+        <div class="filter-bar">
+          <div id="shopFilters">
+            <!-- Populated by script.js -->
+          </div>
+          <select class="sort-select" id="shopSort" aria-label="Sort products">
+            <option value="default">Sort by: Default</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="name-asc">Name: A to Z</option>
+          </select>
+        </div>
+
+        <div class="products-grid" id="shopGrid">
+          <!-- Populated by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Shipping Info -->
+    <section class="section" style="background:var(--clr-bg-alt);">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--sp-xl);text-align:center;">
+          <div class="animate-on-scroll">
+            <div style="width:56px;height:56px;border-radius:50%;background:rgba(44,110,73,0.08);display:flex;align-items:center;justify-content:center;margin:0 auto var(--sp-md);color:var(--clr-primary);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+            </div>
+            <h4>Free Shipping Over $150</h4>
+            <p style="color:var(--clr-text-muted);font-size:var(--fs-sm);">Complimentary delivery on orders above $150. Smaller orders ship for a flat $15.</p>
+          </div>
+          <div class="animate-on-scroll animate-delay-1">
+            <div style="width:56px;height:56px;border-radius:50%;background:rgba(44,110,73,0.08);display:flex;align-items:center;justify-content:center;margin:0 auto var(--sp-md);color:var(--clr-primary);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+            </div>
+            <h4>Quality Guaranteed</h4>
+            <p style="color:var(--clr-text-muted);font-size:var(--fs-sm);">Every piece is handpicked by our design team and backed by a satisfaction guarantee.</p>
+          </div>
+          <div class="animate-on-scroll animate-delay-2">
+            <div style="width:56px;height:56px;border-radius:50%;background:rgba(44,110,73,0.08);display:flex;align-items:center;justify-content:center;margin:0 auto var(--sp-md);color:var(--clr-primary);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            </div>
+            <h4>Design Support</h4>
+            <p style="color:var(--clr-text-muted);font-size:var(--fs-sm);">Need help choosing? Our team offers complimentary styling advice for any purchase.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="script.js"></script>
+</body>
+</html>
