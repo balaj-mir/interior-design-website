@@ -759,7 +759,7 @@ Your site will be live at `https://your-username.github.io/interior-design-websi
 
 ## 👨‍💻 Author
 
-**Waleed** — Built as an internship project demonstrating full-stack frontend development capabilities with vanilla web technologies.
+**Balaj** — Built as an internship project demonstrating full-stack frontend development capabilities with vanilla web technologies.
 
 ---
 
